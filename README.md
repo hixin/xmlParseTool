@@ -1,5 +1,6 @@
 ## xmlParseTool
-    解析xml的工具类, 借鉴Retrofit的思想, 对属性不同的xml, 只需要定义不同的目标Bean类。做项目时自己编写的，可以方便的解析两种xml文件，开源出来！
+
+解析xml的工具类, 借鉴Retrofit的思想, 对属性不同的xml, 只需要定义不同的目标Bean类。做项目时自己编写的，支持解析常见的两种xml形式，开源出来！
 
 ## 如何引入
 
@@ -96,15 +97,13 @@ public class WxOrder {
     private String prepay_id;
     private String trade_type;
 }
+```
 2. 直接解析：
 
  WxOrder wxOrder = XmlParseUtil.parseXMLWithSourceString("xml对应的string", WxOrder.class);
  System.out.println(wxOrder.toString());
  
- 3. 输出结果
+ 3. 输出结果：
  ```
- WxOrder{return_code='SUCCESS', return_msg='OK', appid='wx2421b1c4370ec43b', mch_id='10000100', nonce_str='IITRi8Iabbblz1Jc', sign='7921E432F65EB8ED0CE9755F0E86D72F', result_code='SUCCESS', prepay_id='wx201411101639507cbf6ffd8b0779950874', trade_type='APP'}
-
+WxOrder{return_code='SUCCESS', return_msg='OK', appid='wx2421b1c4370ec43b', mch_id='10000100', nonce_str='IITRi8Iabbblz1Jc', sign='7921E432F65EB8ED0CE9755F0E86D72F', result_code='SUCCESS', prepay_id='wx201411101639507cbf6ffd8b0779950874', trade_type='APP'}
  ```
-
-```
