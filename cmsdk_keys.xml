@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<keyInfo>
+
+    <QQ
+        AppKey="101512302"
+        AppSecret=""
+        RedirectUrl=""
+        Extra=""
+        Enable="true"/>
+
+    <Wechat
+        AppKey="wx9d746ce5d6537a32"
+        AppSecret=""
+        RedirectUrl=""
+        Extra=""
+        Enable="true"/>
+
+    <SinaWeibo
+        AppKey="3602874645"
+        AppSecret=""
+        RedirectUrl="https://api.weibo.com/oauth2/default.html"
+        Extra=""
+        Enable="true"/>
+
+    <Alipay
+        AppKey="2018102561869072"
+        AppSecret="2088421745354073"
+        RedirectUrl=""
+        Extra=""
+        Enable="false"/>
+
+</keyInfo>
