@@ -59,10 +59,10 @@ public class PlatformKey {
 }
 ```
 2. 直接解析：
-
- Map<String, PlatformKey> keys = XmlParseUtil.parseXMLWithSAX(new FileInputStream("xml路径"), PlatformKey.class);
+```
+  Map<String, PlatformKey> keys = XmlParseUtil.parseXMLWithSAX(new FileInputStream("xml路径"), PlatformKey.class);
   System.out.println(keys.toString());
-
+```
 3. 输出结果
  ```
  {QQ=PlatformKey{AppKey='101512302', AppSecret='', RedirectUrl='', Extra='', Enable='true'}, Alipay=PlatformKey{AppKey='2018102561869072', AppSecret='2088421745354073', RedirectUrl='', Extra='', Enable='false'}, Wechat=PlatformKey{AppKey='wx9d746ce5d6537a32', AppSecret='', RedirectUrl='', Extra='', Enable='true'}, SinaWeibo=PlatformKey{AppKey='3602874645', AppSecret='', RedirectUrl='https://api.weibo.com/oauth2/default.html', Extra='', Enable='true'}}
@@ -99,10 +99,10 @@ public class WxOrder {
 }
 ```
 2. 直接解析：
-
+```
  WxOrder wxOrder = XmlParseUtil.parseXMLWithSourceString("xml对应的string", WxOrder.class);
  System.out.println(wxOrder.toString());
- 
+ ```
  3. 输出结果：
  ```
 WxOrder{return_code='SUCCESS', return_msg='OK', appid='wx2421b1c4370ec43b', mch_id='10000100', nonce_str='IITRi8Iabbblz1Jc', sign='7921E432F65EB8ED0CE9755F0E86D72F', result_code='SUCCESS', prepay_id='wx201411101639507cbf6ffd8b0779950874', trade_type='APP'}
